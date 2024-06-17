@@ -4,7 +4,7 @@ import backoff
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-@backoff.on_predicate(backoff.expo, lambda x: x == "failed", max_time=160)
+@backoff.on_predicate(backoff.expo, lambda x: x.status == "failed", max_tries=200)
 def create_and_run_poll_with_backoff(**kwargs):
   return openai.beta.threads.create_and_run_poll(**kwargs)
 
