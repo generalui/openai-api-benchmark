@@ -1,6 +1,5 @@
 import os
 import openai
-from typing import List, Dict
 
 # Configure the OpenAI client
 openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -21,7 +20,7 @@ async def generate_with_inline_context(prompt: str, context: str = "") -> str:
         messages=[instructions]
     )
 
-    prompt_tokens = chat_completion.usage.prompt_tokens
+    usage = chat_completion.usage
     answer = chat_completion.choices[0].message.content
 
-    return answer, prompt_tokens
+    return answer, usage
