@@ -1,1 +1,1 @@
-from process_context_from_pdfs import *
+from .process_context_from_pdfs import *
