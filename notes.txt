@@ -9,3 +9,45 @@ openai.RateLimitError: Error code: 429 - {
     'code': 'rate_limit_exceeded'
   }
 }
+
+skipped questions:
+// { "question": "What is the benefit enrollment period for General UI, LLC?" }
+// { "question": "What should you do if you or your dependents become eligible for Medicare?" }
+// { "question": "Who can enroll in the General UI, LLC Employee Benefits Program?" }
+// { "question": "When does coverage begin for newly hired employees at General UI, LLC?" }
+// { "question": "What can be done during Open Enrollment?" }
+// { "question": "What happens if you do not make your benefit elections during Open Enrollment?" }
+// { "question": "What is the contact information for Regence BlueShield Member Services?" }
+// { "question": "What are some examples of preventive care services covered by the medical plan?" }
+// { "question": "What is the copay for a primary care physician visit under the Regence medical plan?" }
+// { "question": "What is the annual maximum benefit for the Delta Dental plan?" }
+// { "question": "What is the copay for a routine eye exam under the VSP Vision Service Plan?" }
+// { "question": "What is the benefit maximum for Basic Life and AD&D insurance provided by General UI, LLC?" }
+// { "question": "What is the maximum annual election for a Health Care FSA?" }
+// { "question": "What services are provided by the Employee Assistance Program (EAP)?" }
+// { "question": "What is the monthly employee contribution for the Regence BlueShield medical plan in 2024 for Employee & Spouse coverage?" }
+// { "question": "What is the contact number for the USI Benefit Resource Center?" }
+// { "question": "What is the main purpose of the MyBenefits2GO mobile app?" }
+// { "question": "What is the special enrollment period if you become eligible for premium assistance under Medicaid or CHIP?" }
+// { "question": "What should you do if you experience a family status change?" }
+
+Skipped answers:
+// { "answer": "December 1, 2023 – December 31, 2024" }
+// { "answer": "Refer to page 25 for more details about prescription drug coverage choices." }
+// { "answer": "Full-Time employees working at least 30 Hours per Week." }
+// { "answer": "Coverage begins the First of Month Following DOH or First if start date." }
+// { "answer": "You can add, change, or delete coverage; add or drop dependents; and enroll or re-enroll in dependent or health care flexible spending accounts." }
+// { "answer": "You will automatically be defaulted to your prior year elections, except for the FSA, which will default to zero ($0) elections." }
+// { "answer": "1-888-675-6570" }
+// { "answer": "Routine physicals, pediatric exams, blood pressure screenings, and immunizations." }
+// { "answer": "$30 copay (DW)" }
+// { "answer": "$1,500 per person/family" }
+// { "answer": "$10 copay" }
+// { "answer": "$50,000" }
+// { "answer": "$3,050" }
+// { "answer": "Initial assessment, problem-solving sessions, referral services, and more." }
+// { "answer": "$259.83" }
+// { "answer": "Not provided in the text, please refer to HR for assistance." }
+// { "answer": "To provide on-the-go access to benefit and insurance policy details, HR contact information, and more." }
+// { "answer": "You must request coverage within 60 days of being determined eligible for premium assistance." }
+// { "answer": "Contact HR to make the changes to your benefits within 30 days of the event date." }
