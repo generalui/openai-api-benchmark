@@ -1,11 +1,15 @@
 import os
 import openai
-import pprint
+import backoff 
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
+@backoff.on_predicate(backoff.expo, lambda x: x == "failed", max_time=160)
+def create_and_run_poll_with_backoff(**kwargs):
+  return openai.beta.threads.create_and_run_poll(**kwargs)
+
 async def generate_with_vector_db(prompt: str, context = "") -> str:
-  run = openai.beta.threads.create_and_run_poll(
+  run = create_and_run_poll_with_backoff(
     assistant_id=os.getenv("OPENAI_ASSISTANT_ID"),
     instructions="Answer the following question accurately and concisely based on the provided context.",
     thread={
@@ -25,4 +29,4 @@ async def generate_with_vector_db(prompt: str, context = "") -> str:
     )
     return messages.data[0].content[0].text.value, run.usage
   else:
-    print(run.status)
+    return run.status
