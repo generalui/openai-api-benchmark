@@ -45,6 +45,6 @@ If you wish to contribute to this project, please fork the repository and create
 
 # References
 
-For more details, refer to the article [“Do Larger Context Windows Remove the Need for RAG?.”](www.genui.com/resources/inline-context-vs-vector-stores)
+For more details, refer to the article [Do Larger Context Windows Remove the Need for RAG?.](https://www.genui.com/resources/inline-context-vs-vector-stores)
 
 Feel free to reach out if you have any questions.
